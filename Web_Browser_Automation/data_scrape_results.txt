@@ -1,9 +1,9 @@
-17:38:56 Temperature value: 20.0
-17:38:58 Temperature value: 28.0
-17:39:00 Temperature value: 27.0
-17:39:02 Temperature value: 26.0
-17:39:04 Temperature value: 20.0
-17:39:06 Temperature value: 28.0
-17:39:08 Temperature value: 25.0
-17:39:10 Temperature value: 21.0
-17:39:12 Temperature value: 29.0
+2023-09-28  18:56:42 Temperature value: 24.0
+2023-09-28  18:56:44 Temperature value: 27.0
+2023-09-28  18:56:46 Temperature value: 21.0
+2023-09-28  18:56:48 Temperature value: 22.0
+2023-09-28  18:56:50 Temperature value: 28.0
+2023-09-28  18:56:52 Temperature value: 20.0
+2023-09-28  18:56:54 Temperature value: 23.0
+2023-09-28  18:56:56 Temperature value: 24.0
+2023-09-28  18:56:58 Temperature value: 20.0

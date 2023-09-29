@@ -22,7 +22,7 @@ def get_driver(url_value):
 
 
 def write_to_file(data, write_file):
-    current_time = (datetime.now()).strftime("%H:%M:%S")
+    current_time = (datetime.now()).strftime("%Y-%m-%d  %H:%M:%S")
     write_file.write(current_time + " Temperature value: " + str(data) + "\n")
     
 
