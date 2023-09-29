@@ -16,7 +16,6 @@ url = f"https://query1.finance.yahoo.com/v7/finance/download/{ticker_smbl}?perio
 headers = {"User-Agent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"}
 
 data = requests.get(url, headers=headers).content
-print(data)
 
 #download binary files and write to .csv
 data_file = open ("stock_data.csv", "w")
