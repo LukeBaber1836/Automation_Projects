@@ -1,10 +1,25 @@
 import requests
 
-
+# Global variables
 API_key = "1041069513544acebf98f56359e28b31"
+Language = "en"     # English is default
 
-r = requests.get(f"https://newsapi.org/v2/everything?qInTitle=stock%20market&from=2023-9-1&to=2023-9-2&sortBy=popularity&language=en&apiKey={API_key}")
+# Gets the desired news data based off user input
+def get_news(topic, from_date, to_date, language = Language, api_key = API_key):
+    url = f"https://newsapi.org/v2/everything?qInTitle={topic}%20market&from={from_date}&to={to_date}&sortBy=popularity&language={language}&apiKey={API_key}"
+    req = requests.get(url)
+    contents = req.json()
+    articles = contents['articles']
+    results = []
 
-contents = r.json()
+    for article in articles:
+        results.append(f"Title \n' {article['title']}, '\n Description \n', {article['description']}")
+    
+    return results
 
-print (contents["articles"][0]["title"])
+
+#def __main__():
+print(repr((get_news(topic= "space",from_date= "2023-09-01", to_date= "2023-09-15"))).replace(r'\n', '\n'))
+
+
+#print(__main__)
