@@ -30,4 +30,5 @@ def __main__():
     correction = spell_check(user_input)
     print("Corrected sentence: " + correction)
 
-__main__()
+if __name__ == "__main__":
+    __main__()
