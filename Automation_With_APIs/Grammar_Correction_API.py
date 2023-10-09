@@ -31,4 +31,5 @@ def __main__():
     print("Corrected sentence: " + correction)
 
 if __name__ == "__main__":
-    __main__()
+    while True:
+        __main__()
