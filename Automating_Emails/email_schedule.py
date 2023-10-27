@@ -4,7 +4,7 @@ import time
 from datetime import datetime as dt
 
 sender = 'lbcoding.1@gmail.com'
-PASSWORD = os.environ.get('lbcoding_pw')
+PASSWORD = os.environ.get('lbcoding_pw') #Enviroment variable stores pw
 
 receiver = 'gxnsahsqe@emlpro.com'   #Temp email from: https://dropmail.me/en/
 num = 0
