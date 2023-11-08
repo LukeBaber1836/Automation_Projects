@@ -1,2 +1,5 @@
 *.Ds_Store
 *.vscode
+
+# Personal information
+hidden_items.py
