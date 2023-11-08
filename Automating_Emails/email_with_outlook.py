@@ -1,12 +1,13 @@
 import smtplib
 from hidden_items import code_outlook
+from hidden_items import code_gmail
 from email import encoders
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 
 sender = code_outlook.email       #Use outlook email
-receiver = 'lukebaber@ibm.com'
+receiver = code_gmail.email
 PASSWORD = code_outlook.password
 
 # Format rich html email
