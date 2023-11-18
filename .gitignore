@@ -1,5 +1,7 @@
 *.Ds_Store
 *.vscode
+*.pyc
 
 # Personal information
 hidden_items.py
+__pycache__
