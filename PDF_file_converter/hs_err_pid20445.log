@@ -1,0 +1,40 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0xa) at pc=0x0000000124b31cb8, pid=20445, tid=259
+#
+# JRE version:  (17.0.9+11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (17.0.9+11-LTS-201, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, bsd-aarch64)
+# Problematic frame:
+# V  [libjvm.dylib+0x419cb8]  CodeHeap::allocate(unsigned long)+0x1c8
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Djava.awt.headless=true -Dfile.encoding=UTF8 
+
+Host: "MacBookPro18,2" arm64 1 MHz, 10 cores, 32G, Darwin 23.0.0, macOS 14.0 (23A344)
+Time: Mon Nov 20 11:29:58 2023 CST elapsed time: 0.004993 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000143966a00):  JavaThread "Unknown thread" [_thread_in_vm, id=259, stack(0x0000000169f7c000,0x000000016af7c000)]
+
+---------------  S Y S T E M  ---------------
+
+OS:
+uname: Darwin 23.0.0 Darwin Kernel Version 23.0.0: Fri Sep 15 14:41:43 PDT 2023; root:xnu-10002.1.13~1/RELEASE_ARM64_T6000 arm64
+OS uptime: 2 days 2:45 hours
+rlimit (soft/hard): STACK 8176k/65520k , CORE 0k/infinity , NPROC 5333/8000 , NOFILE 10240/infinity , AS infinity/infinity , CPU infinity/infinity , DATA infinity/infinity , FSIZE infinity/infinity , MEMLOCK infinity/infinity , RSS infinity/infinity
+load average: 2.17 2.76 2.95
+
+CPU: total 10 (initial active 10) 0x61:0x0:0x1b588bb3:0, fp, simd, crc, lse
+
+Memory: 16k page, physical 33554432k(2717424k free), swap 0k(0k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (17.0.9+11-LTS-201) for bsd-aarch64 JRE (17.0.9+11-LTS-201), built on Oct 10 2023 22:12:15 by "mach5one" with clang Apple LLVM 12.0.0 (clang-1200.0.32.29)
+
+END.
