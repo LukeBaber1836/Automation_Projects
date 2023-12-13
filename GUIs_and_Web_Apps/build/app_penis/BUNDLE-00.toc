@@ -1,0 +1,4 @@
+([('app_penis',
+   '/Users/lukebaber/Documents/Personal/Code/Python '
+   'Project/Automation_Projects/GUIs_and_Web_Apps/dist/app_penis',
+   'EXECUTABLE')],)

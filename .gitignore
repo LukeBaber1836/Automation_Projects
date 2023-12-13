@@ -1,6 +1,7 @@
 *.Ds_Store
 *.vscode
 *.pyc
+.venv
 
 # Personal information
 hidden_items.py
