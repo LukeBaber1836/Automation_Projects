@@ -50,7 +50,6 @@ async def unknown(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")
 
 
-
 if __name__ == '__main__':
     application = ApplicationBuilder().token(stock_monitor1.telegram_API_key).build()
 
