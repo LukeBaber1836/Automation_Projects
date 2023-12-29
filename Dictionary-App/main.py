@@ -26,13 +26,15 @@ def main(page: ft.Page):
         page.update()
     
     def clear_history(self):
-        self = history
 
+
+
+        self = history
         # Clear history
         while True:
             try:
                 self.controls.remove(self.controls[0])
-            except:
+            except Exception:
                 break
         page.update()
     
@@ -78,6 +80,7 @@ def main(page: ft.Page):
         on_click=clear_history
     )
 
+
     search = ft.TextField(
             label="Search", 
             tooltip="Look up word definition",
@@ -92,6 +95,85 @@ def main(page: ft.Page):
         bgcolor=ft.colors.BLUE_900,
         color= ft.colors.WHITE,
         actions=[
+            ft.PopupMenuButton(
+                icon = ft.icons.ADD,
+                tooltip="Add definition",
+                # expand=True,
+                items = [
+                    ft.PopupMenuItem(
+                        content=ft.Row([ 
+                                ft.Container(
+                                    height=75,
+                                    width=300,
+                                    alignment=ft.alignment.center,
+                                    padding=10,
+                                    border_radius=10,
+
+                                    content=ft.Column(
+                                        controls=[
+                                            ft.TextField(
+                                                label="Word",
+                                                multiline=True,
+                                                min_lines=1,
+                                                max_lines=3,
+                                                expand=True,
+                                            )
+                                        ]
+                                    )        
+                                )
+                            ]
+                        )
+                    ),
+                    ft.PopupMenuItem(
+                        content=ft.Row([ 
+                                ft.Container(
+                                    height=75,
+                                    width=300,
+                                    alignment=ft.alignment.center,
+                                    padding=10,
+                                    border_radius=10,
+
+                                    content=ft.Column(
+                                        controls=[
+                                            ft.TextField(
+                                                label="Definition",
+                                                multiline=True,
+                                                min_lines=1,
+                                                max_lines=3,
+                                                expand=True,
+                                            )
+                                        ]
+                                    )        
+                                )
+                            ]
+                        )
+                    ),
+                    ft.ElevatedButton(
+                        content=ft.Row([ 
+                                ft.Container(
+                                    height=60,
+                                    width=300,
+                                    alignment=ft.alignment.center,
+                                    padding=10,
+                                    border_radius=10,
+                                    on_hover= False,
+
+                                    content=ft.Column(
+                                        controls=[
+                                            ft.ElevatedButton(
+                                                text="Add word",
+                                                tooltip="Add word and definition to dictionary",
+                                                width=300,
+                                                expand=True,
+                                            )
+                                        ]
+                                    )        
+                                )
+                            ]
+                        )
+                    )
+                ]
+            ),
             ft.IconButton(
                 ft.icons.WB_SUNNY_OUTLINED,
                 tooltip="Dark mode",
